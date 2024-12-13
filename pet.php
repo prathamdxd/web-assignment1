@@ -173,14 +173,14 @@
     <script><script>
         $(document).ready(function () {
             $('#pet-registration-form').on('submit', function (e) {
-                e.preventDefault(); // Prevent default form submission
+                e.preventDefault(); 
 
                 $.ajax({
-                    url: '', // Submitting to the same page
+                    url: '', 
                     type: 'POST',
                     data: $(this).serialize(),
                     success: function (response) {
-                        // Reload the page to display success or error message
+                        
                         $('body').html(response);
                     },
                     error: function () {
